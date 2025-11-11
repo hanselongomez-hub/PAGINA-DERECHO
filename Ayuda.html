@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ayuda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>¿Necesitas ayuda?</h1>
+    <button id="menuBtn">☰</button>
+  </header>
+
+  <nav id="menu">
+    <a href="Index.html">Inicio</a>
+    <a href="Ayuda.html">¿Necesitas ayuda?</a>
+    <a href="Referencias.html">Referencias</a>
+  </nav>
+
+  <main>
+    <h2>Videos de apoyo:</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u_AdQjmCWxk?si=s-l45GjBgWgxZ3Io" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>¿Qué hacer cuando eres víctima de ciberacoso?</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ukyPqWepqFU?si=L3RIDzNTZ9rEhIAS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<section id="servicios">
+      <h3>¿Y TÚ?, ¿ERES CÓMPLICE O ACTÚAS? -SPOT CIBERBULLYING - AVALCAE 2020|||¿Qué hacer cuando eres víctima de ciberacoso?</h3>
+      <p></p>
+    </section>
+    <section id="contacto">
+      <h2>Numeros de apoyo:</h2>
+      <p>Emergencia (urgencias y situaciones con riesgo inmediato): 911.
+
+Policía Cibernética / Denuncias tecnológicas: 088 (operación 24/7); también puedes usar el correo cert-mx@sspc.gob.mx y la cuenta de Twitter @CNAC_GN para reportes.<br>
+
+Fiscalía General de Justicia del Estado de México (ejemplo de línea de denuncia local): 800 702 8770 (y en emergencias locales aplica 911).<br>
+
+Recursos y orientación institucional sobre violencia y acoso digital: información y rutas de atención en la Comisión Nacional para Prevenir y Erradicar la Violencia contra las Mujeres (CONAVIM).<br>
+
+Apoyo psicológico y líneas gratuitas de ayuda (para recibir contención emocional tras un incidente): existen varias líneas nacionales de atención psicológica gratuitas y servicios telefónicos de orientación.</p>
+    </section>
+  </main>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

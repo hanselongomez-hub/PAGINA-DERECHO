@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f3f3; /* pastel rosado */
+  color: #333;
+}
+
+header {
+  background-color: #a6dcef; /* azul pastel */
+  padding: 1.5em;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+}
+
+image {
+    text-align: center;
+}
+.contenedor {
+  display: flex;              
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.texto {
+  flex: 1;                    
+  padding-right: 25px;
+}
+
+.imagen {
+  flex: 1;                    /* ocupa espacio disponible */
+  text-align: right;          /* alinea la imagen a la derecha */
+}
+
+.imagen img {
+  max-width: 1000px;           /* tamaño más pequeño */
+  height: auto;               /* mantiene proporción */
+}
+
+p {
+    text-align: justify;
+}
+
+#menuBtn {
+  position: absolute;
+  right: 1em;
+  top: 25%;
+  background: #f9d5e5; /* rosa pastel */
+  border: none;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+/* Menú animado desde la derecha */
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #c8f7dc; /* verde menta pastel */
+  padding: 1em;
+  transform: translateX(100%); /* oculto fuera de pantalla */
+  transition: transform 0.3s ease; /* animación suave */
+}
+
+nav.open {
+  transform: translateX(0); /* entra con animación */
+}
+
+nav a {
+  display: block;
+  margin: 1em 0;
+  text-decoration: none;
+  color: #333;
+}
+
+main {
+  padding: 1em;
+}
+
+.wrap{
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    table{
+      width:100%;
+      border-collapse: collapse;
+      background:#FFF;
+      border:1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    thead th{
+      background: #EAF6FD; /* azul pastel muy claro */
+      color:#183B4D;
+      text-align: left;
+      padding:12px 14px;
+      font-weight: 700;
+      border-bottom:1px solid var(--border);
+    }
+    tbody td{
+      padding:12px 14px;
+      vertical-align: top;
+      border-bottom:1px solid var(--border);
+    }
+    tbody tr:nth-child(odd) td{
+      background: #FFF8FB; /* rosa pastel muy suave */
+    }
+    tbody tr:hover td{
+      background: #F3FFFA; /* menta suave al hover */
+    }
+    /* Columna de ejemplo un poco más ancha */
+    colgroup col:nth-child(3){
+      width: 40%;
+    }
+    colgroup col:nth-child(1){
+      width: 25%;
+    }
+    colgroup col:nth-child(2){
+      width: 35%;
+    }
